@@ -1,9 +1,15 @@
 import React from 'react'
 
-const Fun_props = (x)=>{
-    
+const Fun_props = (props)=>{
+
+    //estos son destructuring
+    const {saludar, userInfo} = props
+    const {nombre, edad, color} = userInfo
+    ///////////////////////////
+
+
     return(
-        <button onClick={()=> x.saludar(x.userInfo.nombre)}>saludar</button>
+        <button onClick={()=> saludar(nombre)}>Saludar</button>
     )
 }
 

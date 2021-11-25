@@ -2,6 +2,7 @@ import React from 'react'
 import Props, {Xt} from './components/Props'
 import Obj   from './components/Obj_props'
 import Func  from './components/Fun_props'
+import Est_count from './components/Est_count'
 
 const App= ()=>{
     //funcion
@@ -26,6 +27,7 @@ const App= ()=>{
             <Obj userInfo={user}/>
             <Xt />
             <Func saludar = {mostrar} userInfo={user}/>
+            <Est_count />
         </div>
         
     )
